@@ -4,7 +4,7 @@
   "description": "BCP workshop",
   "main": "index.js",
   "scripts": {
-    "test": "testem",
+    "test": "testem", 
     "grade": "node_modules/.bin/testem ci"
   },
   "repository": {
