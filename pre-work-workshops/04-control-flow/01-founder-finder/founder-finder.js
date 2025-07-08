@@ -3,5 +3,12 @@ let name = 'David';
 // let name = 'Someone else';
 
 let found;
+if (name === 'David'){
+    found = true;
+}else if (name === 'Nimit'){
+    found = true;
+}else
+{
+    found = false;
+}
 
-// YOUR CODE BELOW
