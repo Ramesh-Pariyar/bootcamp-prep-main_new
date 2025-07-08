@@ -1,1 +1,2 @@
-// YOUR CODE BELOW
+//Here is my code
+let favoriteActivity = "coding";
