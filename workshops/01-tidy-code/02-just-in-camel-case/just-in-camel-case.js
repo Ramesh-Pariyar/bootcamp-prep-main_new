@@ -1,4 +1,4 @@
-// YOUR CODE BELOW
+//My code is here
 function justInCamelCase(underName) {
 
   let camelCaseOutput = "";
@@ -19,5 +19,7 @@ function justInCamelCase(underName) {
       }
     }
   }
-    return camelCaseOutput;
+  return camelCaseOutput;
 }
+let output = justInCamelCase(ramesh_pariyar);
+console.log(output);
