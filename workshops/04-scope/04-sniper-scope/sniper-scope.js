@@ -52,7 +52,7 @@ function elChiffre() {
   bond = 'Body Double';
 
   let AgentinScope = (agent === '007');
-  let prediction = true; // YOUR BOOLEAN PREDICTION HERE
+  let prediction = false; // YOUR BOOLEAN PREDICTION HERE
 
   return AgentinScope === prediction;
 }
