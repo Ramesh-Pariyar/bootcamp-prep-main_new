@@ -18,3 +18,4 @@ function fullstackHQ(){
     }
   }
 }
+console.log (fullstackHQ())
