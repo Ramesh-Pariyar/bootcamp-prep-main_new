@@ -1,12 +1,15 @@
 //Here is my code
 debugger;
-function mySlice(originalString, startIdx = 0 ,endIdx=originalString.length){
-     
-    let slicedString = ""
-
-    for (let i = startIdx; i< endIdx; i++ ){
-        slicedString += originalString[i]
+function myIndexOf (source,searchValue,startIdx=0){
+    let sent = source.slice(startIdx);
+    let lenSearchValue = searchValue.length;
+    for (let i = 0; i<sent.length; i++){
+        let newValue = sent.slice(i, i+lenSearchValue);
+            if(newValue == searchValue) {
+                return i + startIdx;
+            }
+        }
+        return -1;
     }
-    return slicedString
-}
-console.log(mySlice("slice and dice",3,8))
+    
+console.log(myIndexOf(sagarmatha,g,1))
