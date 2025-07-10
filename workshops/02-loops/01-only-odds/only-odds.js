@@ -5,9 +5,9 @@ function onlyOdds(number){
     if(number<0) return 0;
 
     for (let i = 1; i<number; i++){
-            if (i%2===1){
-                sum= sum +i;
-            }
+        if (i%2){
+            sum= sum +i;
+        }
     }
         return sum;
 }

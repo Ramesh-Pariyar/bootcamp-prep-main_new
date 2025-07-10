@@ -23,7 +23,7 @@ at that index, and then move toward the front of the array as it looks for the
 value.
 
 ```javascript
-myLastIndexOf(['the', 'girls', 'bring', 'the', 'boys', 'out'], 'the', 2); // => 0
+myLastIndexOf(['girl', 'the', 'bring', 'the', 'boys', 'out'], 'the', 2); // => 0
 ```
 
 You cannot use the built-in [.lastIndexOf method](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/lastIndexOf) for this problem, but feel free

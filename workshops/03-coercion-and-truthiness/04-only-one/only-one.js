@@ -7,7 +7,7 @@ function onlyOne(a,b,c){
     if (b) count++;
     if (c)count++;
     
-    if(count!=1){
+    if(count!==1){
         return false;
     }
     else{

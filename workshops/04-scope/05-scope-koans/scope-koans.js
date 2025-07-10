@@ -30,7 +30,7 @@ function testThree(testThreeMessage) {
     testThreeMessage = 'test succeeding';
   }
 
-  let msg = getMessage(true);
+  let msg = getMessage(1);
   return msg;
 
   function getMessage(value) {
@@ -50,7 +50,7 @@ function testFour(msg) {
   function innerFunc(msg) {
     msg = msg
 
-    function doubleInner(msg) {
+    function doubleInner() {
       testFourMessage = msg;
       return testFourMessage;
     }

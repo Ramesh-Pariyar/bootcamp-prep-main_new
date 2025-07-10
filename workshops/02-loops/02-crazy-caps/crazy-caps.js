@@ -7,11 +7,11 @@ function crazyCaps(strVal){
         }
         else {
 
-            if (i%2==1){
+            if (i%2){
                 output = output + strVal[i].toUpperCase();
             }
             else{
-                output = output + strVal[i]
+                output = output + strVal[i].toLowerCase();
             }
 
         }
