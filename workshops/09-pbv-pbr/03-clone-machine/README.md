@@ -13,7 +13,8 @@ array.
 let dolly = {
   name: 'Dolly',
   species: 'sheep',
-  offspring: []
+  offspring: [] +
+  
 }
 
 let dollyClone = cloneMachine(dolly);
