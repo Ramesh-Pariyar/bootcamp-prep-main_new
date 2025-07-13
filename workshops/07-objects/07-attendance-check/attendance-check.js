@@ -37,4 +37,32 @@ let classRoom = [
     }
 ];
 
-// YOUR CODE BELOW
+// here is my code
+
+function attendanceCheck (day){
+    let finalArray = []
+
+    for( let i = 0; i < classRoom.length ; i++){
+
+        let  studentObject= classRoom[i]
+
+        let  studentName = Object.keys(studentObject)[0]
+
+        let attendanceObjects = studentObject[studentName]
+
+        for (let j = 0; j < attendanceObjects.length ; j++){
+
+            let attendanceObject = attendanceObjects[j]
+
+            let dayName = Object.keys(attendanceObject)[0]
+
+            if(day === dayName && attendanceObject[dayName]){
+
+                finalArray.push(studentName)
+            }
+
+        }      
+    }
+
+    return finalArray
+}

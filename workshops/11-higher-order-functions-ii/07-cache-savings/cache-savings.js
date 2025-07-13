@@ -1,17 +1,13 @@
 // here is my code
-function cacheSavings (callback){
+function cacheSavings(callback) {
+  let cache = {};
 
-    let cache = {}
+  return function (argument) {
+    if (!(argument in cache)) {
+      let callbackResult = callback(argument);
 
-    return function (argument){
-
-
-        if (! (argument in cache) ){
-            let callbackResult =  callback(argument)
-
-            cache[argument] = callbackResult;
-        }
-        return cache[argument]
+      cache[argument] = callbackResult;
     }
-
+    return cache[argument];
+  };
 }
